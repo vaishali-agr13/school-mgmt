@@ -577,7 +577,7 @@
         <div class="row mt-5 about-row">
 
             <div class="col-md-6 about-img-box">
-                <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8"
+                <img src="{{ asset('images/photo7.avif') }}"
                     class="about-img">
             </div>
 
