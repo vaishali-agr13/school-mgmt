@@ -17,7 +17,7 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::get('/', function () {
-    return redirect('/login');
+    return view('home');
 });
 
 Route::get('/login', [AuthController::class, 'loginForm'])
