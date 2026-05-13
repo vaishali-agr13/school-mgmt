@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Kingdom Inspired Theme</title>
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,19 +17,58 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container">
-        <a class="navbar-brand" href="#">Kids Kingdom Play School</a>
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            
+            <div class="logo-box">
+                KK
+            </div>
+
+            <div class="brand-text">
+                <h4>Kids Kingdom</h4>
+                <span>Play School</span>
+            </div>
+
+        </a>
+
+        <!-- Mobile Toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#rides">Rides</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Programs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
             </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="admission-btn">
+                Admission Open
+            </a>
+
         </div>
     </div>
 </nav>
@@ -102,37 +144,37 @@
 
         <div class="row g-3">
 
-            <div class="col-md-4 col-6">
+            <div class="col-md-4 col-6" data-aos="fade-up">
                 <div class="gallery-card">
                     <img src="{{ asset('images/photo4.jpg') }}">
                 </div>
             </div>
 
-            <div class="col-md-4 col-6">
+            <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="gallery-card">
                     <img src="{{ asset('images/photo5.jpg') }}">
                 </div>
             </div>
 
-            <div class="col-md-4 col-6">
+            <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="gallery-card">
                     <img src="{{ asset('images/photo6.jpg') }}">
                 </div>
             </div>
 
-            <div class="col-md-4 col-6">
+            <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="gallery-card">
-                    <img src="{{ asset('images/photo7.jpg') }}">
+                    <img src="{{ asset('images/photo7.avif') }}">
                 </div>
             </div>
 
-            <div class="col-md-4 col-6">
+            <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="gallery-card">
                     <img src="{{ asset('images/photo8.webp') }}">
                 </div>
             </div>
 
-            <div class="col-md-4 col-6">
+            <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="gallery-card">
                     <img src="{{ asset('images/photo9.jpg') }}">
                 </div>
@@ -195,28 +237,28 @@
 
         <div class="row g-4">
 
-            <div class="col-md-3 col-6">
+            <div class="col-md-3 col-6" data-aos="fade-up">
                 <div class="delight-card">
                     <h2>500+</h2>
                     <p>Happy Students</p>
                 </div>
             </div>
 
-            <div class="col-md-3 col-6">
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="delight-card">
                     <h2>50+</h2>
                     <p>Qualified Teachers</p>
                 </div>
             </div>
 
-            <div class="col-md-3 col-6">
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="delight-card">
                     <h2>100%</h2>
                     <p>Safe Environment</p>
                 </div>
             </div>
 
-            <div class="col-md-3 col-6">
+            <div class="col-md-3 col-6"  data-aos="fade-up" data-aos-delay="300">
                 <div class="delight-card">
                     <h2>10+</h2>
                     <p>Learning Activities</p>
@@ -271,7 +313,7 @@
         <div class="row g-4">
 
             <!-- Card 1 -->
-            <div class="col-md-4 d-flex">
+            <div class="col-md-4 d-flex" data-aos="fade-up">
                 <div class="review-card">
                     <div class="avatar">
                         <img src="{{ asset('images/photo13.jpg') }}">
@@ -293,7 +335,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="col-md-4">
+            <div class="col-md-4"  data-aos="fade-up" data-aos-delay="200">
                 <div class="review-card">
                     <div class="avatar">
                         <img src="{{ asset('images/photo14.jpg') }}">
@@ -315,7 +357,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="review-card">
                     <div class="avatar">
                         <img src="{{ asset('images/photo14.jpg') }}">
@@ -350,7 +392,7 @@
 
         <div class="attraction-grid">
 
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                 <img src="{{ asset('images/photo15.jpg') }}" alt="Play Zone">
                 <div class="card-content">
                     <h3>Indoor Play Zone</h3>
@@ -358,7 +400,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
                 <img src="{{ asset('images/photo16.jpg') }}" alt="Activity Room">
                 <div class="card-content">
                     <h3>Activity Rooms</h3>
@@ -366,7 +408,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card"  data-aos="zoom-in" data-aos-delay="200">
                 <img src="{{ asset('images/photo17.jpg') }}" alt="Outdoor Play">
                 <div class="card-content">
                     <h3>Outdoor Play Area</h3>
@@ -374,7 +416,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
                 <img src="{{ asset('images/photo18.webp') }}" alt="Learning Zone">
                 <div class="card-content">
                     <h3>Smart Learning Zone</h3>
@@ -430,6 +472,15 @@
             });
         }
     });
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
 </script>
 </body>
 </html>
