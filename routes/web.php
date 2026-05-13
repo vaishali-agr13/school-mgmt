@@ -17,9 +17,29 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('front-end/home');
+});
+Route::get('/about-us', function () {
+    return view('front-end/about');
+});
+Route::get('/classes', function () {
+    return view('front-end/classes');
+});
+Route::get('/team', function () {
+    return view('front-end/team');
 });
 
+Route::get('/call-to-action', function () {
+    return view('front-end/call-to-action');
+});
+
+Route::get('/appointment', function () {
+    return view('front-end/appointment');
+});
+
+Route::get('/contact', function () {
+    return view('front-end/contact');
+});
 Route::get('/login', [AuthController::class, 'loginForm'])
     ->name('login');
 
