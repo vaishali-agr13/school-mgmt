@@ -9,8 +9,9 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
-                                    <h1 class="display-2 text-white animated slideInDown mb-4">The Best Kindergarten School For Your Child</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">The Best Kid's kingdom School For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">A joyful place where learning begins with fun, creativity, and care.
+We help children build confidence, curiosity, and strong foundations for lifelong success.</p>
                                     <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
                                     <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
                                 </div>
@@ -25,7 +26,8 @@
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Nurturing young minds with creativity, confidence, and joyful learning in a safe and caring environment.
+At Kids Kingdom, we help every child grow academically, socially, and emotionally for a bright future ahead..</p>
                                     <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
                                     <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
                                 </div>
@@ -44,8 +46,8 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="mb-4">Learn More About Our Work And Our Cultural Activities</h1>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos, ipsum labore duo duo sit no sea diam. Et dolor et kasd ea. Eirmod diam at dolor est vero nonumy magna.</p>
+                        <p>Explore a world of fun learning, creative activities, celebrations, and cultural events that help children grow with confidence and joy.</p>
+                        <p class="mb-4">Our engaging programs encourage teamwork, imagination, and overall personality development in a caring environment..</p>
                         <div class="row g-4 align-items-center">
                             <div class="col-sm-6">
                                 <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
@@ -93,8 +95,7 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4">Become A Teacher</h1>
-                                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-                                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                                <p class="mb-4">Join our passionate team of educators and help shape young minds through creativity, care, and inspiring learning experiences.Become a part of a nurturing environment where every teacher makes a meaningful difference in a child’s future.
                                 </p>
                                 <a class="btn btn-primary py-3 px-5" href="">Get Started Now<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
@@ -111,7 +112,8 @@
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">School Classes</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    <p>Our classes are designed to create a fun, interactive, and engaging learning experience for every child.
+We focus on academic growth, creativity, communication skills, and overall development in a caring environment..</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -424,8 +426,8 @@
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Popular Teachers</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
-                        eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    <p>Meet our experienced and caring teachers who inspire children to learn, grow, and explore their talents with confidence every day.
+Our dedicated educators create a friendly and supportive environment for joyful learning..</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
