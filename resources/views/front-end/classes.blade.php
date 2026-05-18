@@ -36,11 +36,11 @@ We provide a nurturing environment where every child can learn, explore, and gro
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Suman Patidar</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$1999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -76,11 +76,11 @@ We provide a nurturing environment where every child can learn, explore, and gro
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Tripti Raghuvanshi</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$2999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -116,11 +116,11 @@ We provide a nurturing environment where every child can learn, explore, and gro
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Kiran Bedi</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$2999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -156,11 +156,11 @@ We provide a nurturing environment where every child can learn, explore, and gro
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Shikha Agrawal</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -196,11 +196,11 @@ We provide a nurturing environment where every child can learn, explore, and gro
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Priti khandelwal</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$1999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -236,11 +236,11 @@ We provide a nurturing environment where every child can learn, explore, and gro
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Pooja Yadav</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$1999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -279,35 +279,30 @@ We provide a nurturing environment where every child can learn, explore, and gro
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4">Make Appointment</h1>
-                                <form>
+                                <form action="{{ route('contact.submit') }}" method="POST">
+                                        @csrf                                    
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Gurdian Name</label>
+                                                <input type="text" name="name" class="form-control border-0" id="gname" placeholder="Gurdian Name">
+                                                <label for="gname">Your Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                                <label for="gmail">Gurdian Email</label>
+                                                <input type="email" name="email"  class="form-control border-0" id="gmail" placeholder="Gurdian Email">
+                                                <label for="gmail">Your Email</label>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                                <label for="cage">Child Age</label>
+                                                <input type="text" name="subject" class="form-control border-0" id="subject" placeholder="Subject">
+                                                <label for="subject">Subject</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                                <textarea name="message" class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
                                                 <label for="message">Message</label>
                                             </div>
                                         </div>

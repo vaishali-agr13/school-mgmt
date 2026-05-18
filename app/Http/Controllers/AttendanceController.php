@@ -59,4 +59,19 @@ class AttendanceController extends Controller
         return redirect('/admin/attendance')
             ->with('success', 'Attendance Updated Successfully');
     }
+
+    public function report(Request $request)
+        {
+            $query = Attendance::with('student');
+
+            // Date filter
+            if($request->date)
+            {
+                $query->whereDate('date', $request->date);
+            }
+
+            $attendances = $query->latest()->get();
+        
+            return view('attendance.report', compact('attendances'));
+        }
 }

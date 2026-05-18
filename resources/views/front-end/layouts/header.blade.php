@@ -61,11 +61,12 @@
                             <a href="/team" class="dropdown-item">Popular Teachers</a>
                             <a href="/call-to-action" class="dropdown-item">Become A Teachers</a>
                             <a href="/appointment" class="dropdown-item">Make Appointment</a>
+                            <a href="/gallery" class="dropdown-item">Gallery</a>
                         </div>
                     </div>
                     <a href="/contact" class="nav-item nav-link">Contact Us</a>
                 </div>
-                <a href="https://htmlcodex.com/downloading/?item=2270" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Buy Pro Version<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="/login" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->

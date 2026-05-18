@@ -8,6 +8,10 @@ use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\FeeController;
 use App\Http\Controllers\HomeworkController;
 use App\Http\Controllers\NoticeController;
+use App\Http\Controllers\TeacherController;
+
+use App\Http\Controllers\ContactController;
+
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -15,6 +19,19 @@ use App\Http\Controllers\DashboardController;
 | Login Routes
 |--------------------------------------------------------------------------
 */
+
+
+Route::get('/admin/teacher/create', [TeacherController::class, 'create'])->name('teacher.create');
+Route::get('/admin/teachers', [TeacherController::class, 'index'])->name('teacher.index');
+Route::get('/admin/teachers/edit/{id}', [TeacherController::class, 'edit'])->name('teacher.edit');
+
+Route::get('/admin/attendance/report', [AttendanceController::class, 'report'])->name('attendance.report');
+
+Route::post('/admin/teachers/update/{id}', [TeacherController::class, 'update'])->name('teacher.update');
+
+Route::get('/admin/teachers/delete/{id}', [TeacherController::class, 'delete'])->name('teacher.delete');
+
+Route::post('/admin/teacher/store', [TeacherController::class, 'store'])->name('teacher.store');
 
 Route::get('/', function () {
     return view('front-end/home');
@@ -29,9 +46,14 @@ Route::get('/team', function () {
     return view('front-end/team');
 });
 
+Route::get('/gallery', function () {
+    return view('front-end/gallery');
+});
 Route::get('/call-to-action', function () {
     return view('front-end/call-to-action');
 });
+
+Route::post('/contact-submit', [ContactController::class, 'store'])->name('contact.submit');
 
 Route::get('/appointment', function () {
     return view('front-end/appointment');

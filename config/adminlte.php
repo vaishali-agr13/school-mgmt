@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b> Kids </b>Kingdom',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -328,10 +328,41 @@ return [
         ],
         [
             'text' => 'Attendance',
-            'url' => 'admin/attendance',
             'icon' => 'fas fa-calendar-check',
             'label_color' => 'success',
+            'submenu' => [
+                        [
+                            'text' => 'Attendance Report',
+                            'url'  => '/admin/attendance/report',
+                            'icon' => 'nav-icon fas fa-calendar-check',
+                        ],
+
+                        [
+                            'text' => 'Todays Attendance',
+                            'url'  => '/admin/attendance',
+                            'icon' => 'nav-icon fas fa-calendar-check',
+                        ],
+            ]
         ],
+
+         [
+            'text' => 'Teachers',
+            'can'  => 'admin-only',
+            'icon' => 'fas fa-fw fa-briefcase',
+            'submenu' => [
+                        [
+                            'text' => 'Create Teacher',
+                            'url'  => '/admin/teacher/create',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                        [
+                            'text' => 'List Teacher',
+                            'url'  => '/admin/teachers',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                    ],
+        ],
+
          [
             'text' => ' Fees',
             'url' => 'admin/fees',

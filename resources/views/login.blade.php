@@ -57,21 +57,7 @@
 
                 </form>
 
-                <hr>
-
-                <div class="small">
-
-                    <p>
-                        <strong>Admin Login:</strong><br>
-                        admin@gmail.com / 12345678
-                    </p>
-
-                    <p>
-                        <strong>Teacher Login:</strong><br>
-                        teacher@gmail.com / 12345678
-                    </p>
-
-                </div>
+                
 
             </div>
 

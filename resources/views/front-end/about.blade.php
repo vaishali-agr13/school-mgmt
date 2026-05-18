@@ -33,8 +33,8 @@
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                     <div class="ms-3">
-                                        <h6 class="text-primary mb-1">Jhon Doe</h6>
-                                        <small>CEO & Founder</small>
+                                        <h6 class="text-primary mb-1">Neha Sharma</h6>
+                                        <small>Principal</small>
                                     </div>
                                 </div>
                             </div>
@@ -96,10 +96,10 @@ With experience and dedication, they guide students toward creativity, knowledge
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
                             <div class="team-text">
-                                <h3>Full Name</h3>
-                                <p>Designation</p>
+                                <h3>Suman Patidar</h3>
+                                <p>Teacher</p>
                                 <div class="d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -110,10 +110,10 @@ With experience and dedication, they guide students toward creativity, knowledge
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
                             <div class="team-text">
-                                <h3>Full Name</h3>
-                                <p>Designation</p>
+                                <h3>Karan Rajput</h3>
+                                <p>Teacher</p>
                                 <div class="d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -124,10 +124,10 @@ With experience and dedication, they guide students toward creativity, knowledge
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="">
                             <div class="team-text">
-                                <h3>Full Name</h3>
-                                <p>Designation</p>
+                                 <h3>Kiran Roy</h3>
+                                <p>Teacher</p>
                                 <div class="d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>

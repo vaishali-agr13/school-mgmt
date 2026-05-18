@@ -56,8 +56,8 @@ At Kids Kingdom, we help every child grow academically, socially, and emotionall
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                     <div class="ms-3">
-                                        <h6 class="text-primary mb-1">Jhon Doe</h6>
-                                        <small>CEO & Founder</small>
+                                        <h6 class="text-primary mb-1">Neha Sharma</h6>
+                                        <small>Principal</small>
                                     </div>
                                 </div>
                             </div>
@@ -127,11 +127,11 @@ We focus on academic growth, creativity, communication skills, and overall devel
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Nikita Bhandari</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$1999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -165,13 +165,13 @@ We focus on academic growth, creativity, communication skills, and overall devel
                                 <a class="d-block text-center h3 mt-3 mb-4" href="">Color Management</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
+                                        <img class="rounded-circle flex-shrink-0" src="img/user1.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Arun Raghav</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$2999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -207,11 +207,11 @@ We focus on academic growth, creativity, communication skills, and overall devel
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Purvi Deshmukh</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$1999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -245,13 +245,13 @@ We focus on academic growth, creativity, communication skills, and overall devel
                                 <a class="d-block text-center h3 mt-3 mb-4" href="">Language & Speaking</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
+                                        <img class="rounded-circle flex-shrink-0" src="img/user1.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Nitin Sharma</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$3555</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -287,11 +287,11 @@ We focus on academic growth, creativity, communication skills, and overall devel
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Sheetal Agrawal</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$3999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -327,11 +327,11 @@ We focus on academic growth, creativity, communication skills, and overall devel
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
+                                            <h6 class="text-primary mb-1">Neelam Mittal</h6>
                                             <small>Teacher</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$2999</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -370,35 +370,32 @@ We focus on academic growth, creativity, communication skills, and overall devel
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4">Make Appointment</h1>
-                                <form>
+                                <form action="{{ route('contact.submit') }}" method="POST">
+                                    @csrf
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Gurdian Name</label>
+                                                <input type="text" class="form-control border-0" name="name" id="gname" placeholder="Gurdian Name">
+                                                <label for="gname">Your Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                                <label for="gmail">Gurdian Email</label>
+                                                <input type="email" name="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
+                                                <label for="gmail">Your Email</label>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                                <label for="cage">Child Age</label>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                                <input type="text" name="subject" class="form-control border-0" id="subject" placeholder="Subject">
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea name="message" class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
                                                 <label for="message">Message</label>
                                             </div>
                                         </div>
@@ -432,10 +429,10 @@ Our dedicated educators create a friendly and supportive environment for joyful 
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
                             <div class="team-text">
-                                <h3>Full Name</h3>
-                                <p>Designation</p>
+                                <h3>Suman Patidar</h3>
+                                <p>Teacher</p>
                                 <div class="d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -446,10 +443,10 @@ Our dedicated educators create a friendly and supportive environment for joyful 
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
                             <div class="team-text">
-                                <h3>Full Name</h3>
-                                <p>Designation</p>
+                                <h3>Karan Rajput</h3>
+                                <p>Teacher</p>
                                 <div class="d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -460,10 +457,10 @@ Our dedicated educators create a friendly and supportive environment for joyful 
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="">
                             <div class="team-text">
-                                <h3>Full Name</h3>
-                                <p>Designation</p>
+                                <h3>Kiran Roy</h3>
+                                <p>Teacher</p>
                                 <div class="d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
