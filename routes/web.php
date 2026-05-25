@@ -9,6 +9,11 @@ use App\Http\Controllers\FeeController;
 use App\Http\Controllers\HomeworkController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\GalleryController;
+
+use App\Http\Controllers\HomeController;
+
+use App\Http\Controllers\SchoolClassController;
 
 use App\Http\Controllers\ContactController;
 
@@ -33,22 +38,30 @@ Route::get('/admin/teachers/delete/{id}', [TeacherController::class, 'delete'])-
 
 Route::post('/admin/teacher/store', [TeacherController::class, 'store'])->name('teacher.store');
 
-Route::get('/', function () {
-    return view('front-end/home');
-});
+// Route::get('/', function () {
+//     return view('front-end/home');
+// });
+
+Route::get('/', [HomeController::class, 'index']);
+
 Route::get('/about-us', function () {
     return view('front-end/about');
 });
 Route::get('/classes', function () {
     return view('front-end/classes');
 });
-Route::get('/team', function () {
-    return view('front-end/team');
-});
+// Route::get('/team', function () {
+//     return view('front-end/team');
+// });
 
-Route::get('/gallery', function () {
-    return view('front-end/gallery');
-});
+Route::get('/team', [TeacherController::class, 'getTeam']);
+
+// Route::get('/gallery', function () {
+//     return view('front-end/gallery');
+// });
+
+Route::get('/gallery', [GalleryController::class, 'indexFrontEnd']);
+
 Route::get('/call-to-action', function () {
     return view('front-end/call-to-action');
 });
@@ -86,6 +99,20 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::resource('homework', HomeworkController::class);
 
     Route::resource('notices', NoticeController::class);
+
+    Route::resource('classes', SchoolClassController::class);
+
+    Route::get('/gallery/create', [GalleryController::class, 'create']);
+
+    Route::get('/gallery', [GalleryController::class, 'index']);
+    
+    Route::get('/gallery/edit/{id}', [GalleryController::class, 'edit']);
+    
+    Route::put('/gallery/update/{id}', [GalleryController::class, 'update']);
+
+    Route::post('/gallery/store', [GalleryController::class, 'store']);
+    
+    Route::delete('/gallery/delete/{id}', [GalleryController::class, 'destroy']);
 
 });
 

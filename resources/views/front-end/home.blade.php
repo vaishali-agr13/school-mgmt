@@ -116,47 +116,49 @@ At Kids Kingdom, we help every child grow academically, socially, and emotionall
 We focus on academic growth, creativity, communication skills, and overall development in a caring environment..</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-1.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Art & Drawing</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Nikita Bhandari</h6>
-                                            <small>Teacher</small>
+                       @foreach($classes as $class)
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="classes-item">
+                                    <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                        <img class="img-fluid rounded-circle" src="{{ asset('uploads/classes/' . $class->class_logo) }}" alt="">
+                                    </div>
+                                    <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                        <a class="d-block text-center h3 mt-3 mb-4" href="">{{$class->class_name}}</a>
+                                        <div class="d-flex align-items-center justify-content-between mb-4">
+                                            <div class="d-flex align-items-center">
+                                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
+                                                <div class="ms-3">
+                                                    <h6 class="text-primary mb-1">{{$class->teacher_name}}</h6>
+                                                    <small>Teacher</small>
+                                                </div>
+                                            </div>
+                                            <span class="bg-primary text-white rounded-pill py-2 px-3" href="">${{$class->fees}}</span>
+                                        </div>
+                                        <div class="row g-1">
+                                            <div class="col-4">
+                                                <div class="border-top border-3 border-primary pt-2">
+                                                    <h6 class="text-primary mb-1">Age:</h6>
+                                                    <small>{{$class->age}}</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="border-top border-3 border-success pt-2">
+                                                    <h6 class="text-success mb-1">Time:</h6>
+                                                    <small>{{$class->time}}</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="border-top border-3 border-warning pt-2">
+                                                    <h6 class="text-warning mb-1">Capacity:</h6>
+                                                    <small>{{$class->capacity}} Kids</small>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$1999</span>
                                 </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>3-5 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>9-10 AM</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Capacity:</h6>
-                                            <small>30 Kids</small>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        @endforeach
+                    <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
                                 <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="">
@@ -355,7 +357,7 @@ We focus on academic growth, creativity, communication skills, and overall devel
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -420,60 +422,102 @@ We focus on academic growth, creativity, communication skills, and overall devel
 
         <!-- Team Start -->
         <div class="container-fluid py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Popular Teachers</h1>
-                    <p>Meet our experienced and caring teachers who inspire children to learn, grow, and explore their talents with confidence every day.
-Our dedicated educators create a friendly and supportive environment for joyful learning..</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item position-relative">
-                            <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
-                            <div class="team-text">
-                                <h3>Suman Patidar</h3>
-                                <p>Teacher</p>
-                                <div class="d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item position-relative">
-                            <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
-                            <div class="team-text">
-                                <h3>Karan Rajput</h3>
-                                <p>Teacher</p>
-                                <div class="d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item position-relative">
-                            <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="">
-                            <div class="team-text">
-                                <h3>Kiran Roy</h3>
-                                <p>Teacher</p>
-                                <div class="d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Popular Teachers</h1>
+            <p>
+                Meet our experienced and caring teachers who inspire children to learn, grow, and explore their talents with confidence every day.
+                Our dedicated educators create a friendly and supportive environment for joyful learning.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+         @foreach($teachers as $teacher)
+            <!-- Teacher 1 -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item position-relative">
+                    <img class="img-fluid rounded w-100 teacher-img" src="{{ asset('uploads/teachers/' . $teacher->teacher_logo) }}" alt="">
+                    <div class="team-text">
+                        <h3>{{$teacher->name}}</h3>
+                        <p>Teacher</p>
+
+                        <div class="d-flex align-items-center">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+        @endforeach
+
+            <!-- Teacher 2 -->
+            <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item position-relative">
+                    <img class="img-fluid rounded w-100 teacher-img" src="img/team-2.jpg" alt="">
+                    <div class="team-text">
+                        <h3>Karan Rajput</h3>
+                        <p>Teacher</p>
+
+                        <div class="d-flex align-items-center">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Teacher 3 -->
+            <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item position-relative">
+                    <img class="img-fluid rounded w-100 teacher-img" src="img/team-3.jpg" alt="">
+                    <div class="team-text">
+                        <h3>Kiran Roy</h3>
+                        <p>Teacher</p>
+
+                        <div class="d-flex align-items-center">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Teacher 4 -->
+            <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item position-relative">
+                    <img class="img-fluid rounded w-100 teacher-img" src="img/team-2.jpg" alt="">
+                    <div class="team-text">
+                        <h3>Rahul Sharma</h3>
+                        <p>Teacher</p>
+
+                        <div class="d-flex align-items-center">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
         </div>
+    </div>
+</div>
+
+
         <!-- Team End -->
 
 
         <!-- Footer Start -->
       @include('front-end.layouts.footer')
+
+
+      <!-- <style>
+.teacher-img{
+    height: 200px;   /* image height kam */
+    object-fit: cover;
+}
+</style> -->

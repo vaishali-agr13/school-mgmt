@@ -25,11 +25,13 @@
 They inspire students with care, creativity, and personalized attention in a supportive environment.</p>
                 </div>
                 <div class="row g-4">
+
+                @foreach($teachers as $teacher)
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid rounded w-100" src="{{ asset('uploads/teachers/' . $teacher->teacher_logo) }}" alt="">
                             <div class="team-text">
-                                <h3>Suman Patidar</h3>
+                                <h3>{{$teacher->name}}</h3>
                                 <p>Teacher</p>
                                 <div class="d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -39,7 +41,9 @@ They inspire students with care, creativity, and personalized attention in a sup
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                @endforeach
+                
+                    <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item position-relative">
                             <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
                             <div class="team-text">
@@ -108,7 +112,7 @@ They inspire students with care, creativity, and personalized attention in a sup
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

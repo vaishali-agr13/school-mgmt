@@ -33,29 +33,77 @@
         <div class="row g-4">
 
             <!-- Photo Item -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="gallery-item position-relative overflow-hidden rounded">
-                    <img src="{{ asset('img/gallery-1.jpg') }}" class="img-fluid w-100" alt="">
 
-                    <div class="gallery-overlay">
-                        <a href="img/gallery-1.jpg" class="btn btn-primary rounded-pill px-4">
-                            View Photo
-                        </a>
+           @foreach($galleries as $gallery)
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp"
+                    data-wow-delay="{{ $loop->iteration * 0.2 }}s">
+
+                    <div class="gallery-item position-relative overflow-hidden rounded">
+
+                        {{-- IMAGE --}}
+                        @if($gallery->type == 'image')
+
+                            <img src="{{ asset($gallery->file) }}"
+                                class="img-fluid w-100"
+                                style="height:300px; object-fit:cover;"
+                                alt="">
+
+                            <div class="gallery-overlay">
+
+                                <a href="{{ asset($gallery->file) }}"
+                                class="btn btn-primary rounded-pill px-4">
+
+                                    View Photo
+
+                                </a>
+
+                            </div>
+
+                        {{-- VIDEO --}}
+                        @elseif($gallery->type == 'video')
+
+                            <div class="position-relative">
+
+                                <video class="img-fluid w-100"
+                                    style="height:300px; object-fit:cover;"
+                                    muted
+                                    playsinline>
+
+                                    <source src="{{ asset($gallery->file) }}" type="video/mp4">
+
+                                </video>
+
+                                {{-- PLAY BUTTON --}}
+                                <div class="video-icon">
+
+                                    <a href="{{ asset($gallery->file) }}"
+                                    target="_blank"
+                                    class="btn btn-primary btn-lg rounded-circle">
+
+                                        <i class="fa fa-play"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        @endif
+
                     </div>
+
                 </div>
-            </div>
+
+            @endforeach
+            
 
             <!-- Video Item -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="gallery-item position-relative overflow-hidden rounded">
                     <img src="{{ asset('img/gallery-2.jpg') }}" class="img-fluid w-100" alt="">
 
                     <div class="video-icon">
-                        <!-- <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
-                           class="btn btn-primary btn-lg rounded-circle">
-                            <i class="fa fa-play"></i>
-                        </a> -->
-
 
                         <a href="https://www.instagram.com/p/DWbi7xfgSB7/?__d=undefined" 
                             target="_blank"
@@ -64,10 +112,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Photo Item -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="gallery-item position-relative overflow-hidden rounded">
                     <img src="img/gallery-3.jpg" class="img-fluid w-100" alt="">
 
@@ -77,10 +125,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Video Item -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="gallery-item position-relative overflow-hidden rounded">
                     <img src="{{ asset('img/gallery-4.jpg') }}" class="img-fluid w-100" alt="">
 
@@ -92,10 +140,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Photo Item -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="gallery-item position-relative overflow-hidden rounded">
                     <img src="{{ asset('img/gallery-5.jpg') }}" class="img-fluid w-100" alt="">
 
@@ -105,10 +153,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Photo Item -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="gallery-item position-relative overflow-hidden rounded">
                     <img src="{{ asset('img/gallery-6.jpg') }}" class="img-fluid w-100" alt="">
 
@@ -118,7 +166,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>

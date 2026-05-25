@@ -14,7 +14,7 @@
 
         <div class="card-body">
 
-            <form action="{{ route('teacher.update', $teacher->id) }}" method="POST">
+            <form action="{{ route('teacher.update', $teacher->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 <div class="mb-3">
@@ -53,6 +53,18 @@
                     <small class="text-muted">
                         Leave blank if you don't want to change password
                     </small>
+                </div>
+
+                 <div class="mb-3">
+                    <label>Old Image</label><br>
+
+                    <img src="{{ asset('uploads/teachers/'.$teacher->teacher_logo) }}"
+                        width="120">
+                </div>
+
+                <div class="mb-3">
+                    <label>New Image</label>
+                    <input type="file" name="teacher_logo" class="form-control">
                 </div>
 
                 <button type="submit" class="btn btn-primary">

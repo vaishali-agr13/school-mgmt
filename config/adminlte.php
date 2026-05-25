@@ -363,6 +363,30 @@ return [
                     ],
         ],
 
+        [
+            'text' => 'Classes',
+            'can'  => 'admin-only',
+            'icon' => 'fas fa-fw fa-briefcase',
+            'submenu' => [
+                        [
+                            'text' => 'Create Class',
+                            'url'  => '/admin/classes/create',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                        [
+                            'text' => 'List Class',
+                            'url'  => '/admin/classes',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                    ],
+        ],
+        [
+            'text' => 'Gallery',
+            'can'  => 'admin-only',
+            'url'=>'/admin/gallery',
+            'icon' => 'fas fa-fw fa-briefcase',
+        ],
+
          [
             'text' => ' Fees',
             'url' => 'admin/fees',
