@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+
 use App\Models\SchoolClass;
 
 class SchoolClassController extends Controller
@@ -42,7 +44,15 @@ class SchoolClassController extends Controller
 
             $imageName = time().'.'.$image->getClientOriginalExtension();
 
-            $image->move(public_path('uploads/classes'), $imageName);
+            $destinationPath = $_SERVER['DOCUMENT_ROOT'].'/uploads/classes';
+
+            // Create folder if not exists
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath, 0775, true);
+            }
+
+            File::copy($image, $destinationPath.'/'.$imageName);
+           // $image->move($destinationPath, $imageName);
         }
 
 
@@ -78,15 +88,25 @@ class SchoolClassController extends Controller
         if ($request->hasFile('class_logo')) {
 
             // Old Image Delete
-            if ($class->class_logo && file_exists(public_path('uploads/classes/'.$class->class_logo))) {
-                unlink(public_path('uploads/classes/'.$class->class_logo));
+            if ($class->class_logo && file_exists($_SERVER['DOCUMENT_ROOT'].'/uploads/classes/'.$class->class_logo)) {
+                unlink($_SERVER['DOCUMENT_ROOT'].'/uploads/classes/'.$class->class_logo);
             }
 
             $image = $request->file('class_logo');
 
             $imageName = time().'.'.$image->getClientOriginalExtension();
 
-            $image->move(public_path('uploads/classes'), $imageName);
+            
+            $destinationPath = $_SERVER['DOCUMENT_ROOT'].'/uploads/classes';
+
+            // Create folder if not exists
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath, 0775, true);
+            }
+
+            File::copy($image, $destinationPath.'/'.$imageName);
+
+           // $image->move(public_path('uploads/classes'), $imageName);
         }
 
         $class->update([

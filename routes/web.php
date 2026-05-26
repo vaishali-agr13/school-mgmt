@@ -60,7 +60,7 @@ Route::get('/team', [TeacherController::class, 'getTeam']);
 //     return view('front-end/gallery');
 // });
 
-Route::get('/gallery', [GalleryController::class, 'indexFrontEnd']);
+Route::get('/gallery-view', [GalleryController::class, 'indexFrontEnd']);
 
 Route::get('/call-to-action', function () {
     return view('front-end/call-to-action');

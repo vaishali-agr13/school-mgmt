@@ -6,6 +6,7 @@ use App\Models\SchoolClass;
 use Illuminate\Support\Facades\DB;
 use App\Models\Gallery;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class GalleryController extends Controller
 {
@@ -16,6 +17,7 @@ class GalleryController extends Controller
     }
 
     public function indexFrontEnd() {
+        echo 'dsfds';die;
         $galleries = Gallery::latest()->get();
 
         return view('front-end.gallery', compact('galleries'));
@@ -49,11 +51,15 @@ class GalleryController extends Controller
 
                 // folder
                 $folder = $type == 'image'
-                            ? 'uploads/gallery/images'
-                            : 'uploads/gallery/videos';
+                            ? '/uploads/gallery/images'
+                            : '/uploads/gallery/videos';
+
+                $destinationPath = $_SERVER['DOCUMENT_ROOT'].$folder;
+
+                File::copy($file, $destinationPath.'/'.$filename);
 
                 // move file
-                $file->move(public_path($folder), $filename);
+               // $file->move(public_path($folder), $filename);
 
                 // save db
                 Gallery::create([

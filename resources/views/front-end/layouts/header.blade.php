@@ -61,7 +61,7 @@
                             <a href="/team" class="dropdown-item">Popular Teachers</a>
                             <a href="/call-to-action" class="dropdown-item">Become A Teachers</a>
                             <a href="/appointment" class="dropdown-item">Make Appointment</a>
-                            <a href="/gallery" class="dropdown-item">Gallery</a>
+                            <a href="/gallery-view" class="dropdown-item">Gallery</a>
                         </div>
                     </div>
                     <a href="/contact" class="nav-item nav-link">Contact Us</a>

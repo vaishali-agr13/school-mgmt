@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\File;
+
 use Illuminate\Support\Facades\DB;
 
 
@@ -41,7 +43,16 @@ class TeacherController extends Controller
 
             $imageName = time().'.'.$image->getClientOriginalExtension();
 
-            $image->move(public_path('uploads/teachers'), $imageName);
+            $destinationPath = $_SERVER['DOCUMENT_ROOT'].'/uploads/classes';
+
+            // Create folder if not exists
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath, 0775, true);
+            }
+
+            File::copy($image, $destinationPath.'/'.$imageName);
+
+          //  $image->move(public_path('uploads/teachers'), $imageName);
         }
 
         User::create([
@@ -75,19 +86,25 @@ public function update(Request $request, $id)
 
     if ($request->hasFile('teacher_logo')) {
 
-        // old image delete
-        $oldImagePath = public_path('uploads/teachers/'.$teacher->teacher_logo);
 
-        if (file_exists($oldImagePath)) {
-            unlink($oldImagePath);
-        }
+     if ($teacher->teacher_logo && file_exists($_SERVER['DOCUMENT_ROOT'].'/uploads/teachers/'.$teacher->teacher_logo)) {
+                unlink($_SERVER['DOCUMENT_ROOT'].'/uploads/teachers/'.$teacher->teacher_logo);
+            }
 
-        // upload new image
-        $image = $request->file('teacher_logo');
+            $image = $request->file('teacher_logo');
 
-        $imageName = time().'.'.$image->getClientOriginalExtension();
+            $imageName = time().'.'.$image->getClientOriginalExtension();
 
-        $image->move(public_path('uploads/teachers'), $imageName);
+            
+            $destinationPath = $_SERVER['DOCUMENT_ROOT'].'/uploads/teachers';
+
+            // Create folder if not exists
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath, 0775, true);
+            }
+
+            File::copy($image, $destinationPath.'/'.$imageName);
+            // $image->move(public_path('uploads/teachers'), $imageName);
     }
 
     $teacher->name = $request->name;
