@@ -47,9 +47,12 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about-us', function () {
     return view('front-end/about');
 });
-Route::get('/classes', function () {
-    return view('front-end/classes');
-});
+// Route::get('/classes', function () {
+//     return view('front-end/classes');
+// });
+
+Route::get('/classes', [SchoolClassController::class, 'getClassDetails']);
+
 // Route::get('/team', function () {
 //     return view('front-end/team');
 // });

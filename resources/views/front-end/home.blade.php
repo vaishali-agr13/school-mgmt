@@ -117,10 +117,10 @@ We focus on academic growth, creativity, communication skills, and overall devel
                 </div>
                 <div class="row g-4">
                        @foreach($classes as $class)
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="classes-item">
                                     <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                        <img class="img-fluid rounded-circle" src="{{ asset('uploads/classes/'.$class->class_logo) }}" alt="">
+                                        <img class="rounded-circle class-img" src="{{ asset('uploads/classes/'.$class->class_logo) }}" alt="">
                                     </div>
                                     <div class="bg-light rounded p-4 pt-5 mt-n5">
                                         <a class="d-block text-center h3 mt-3 mb-4" href="">{{$class->class_name}}</a>
@@ -138,7 +138,7 @@ We focus on academic growth, creativity, communication skills, and overall devel
                                             <div class="col-4">
                                                 <div class="border-top border-3 border-primary pt-2">
                                                     <h6 class="text-primary mb-1">Age:</h6>
-                                                    <small>{{$class->age}}</small>
+                                                    <small>{{$class->age}} Years</small>
                                                 </div>
                                             </div>
                                             <div class="col-4">
@@ -515,9 +515,10 @@ We focus on academic growth, creativity, communication skills, and overall devel
       @include('front-end.layouts.footer')
 
 
-      <!-- <style>
-.teacher-img{
-    height: 200px;   /* image height kam */
+      <style>
+.class-img{
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
-</style> -->
+</style>

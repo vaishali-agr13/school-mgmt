@@ -135,5 +135,9 @@ class SchoolClassController extends Controller
                 ->with('success', 'Class Deleted Successfully');
     }
     
-
+   public function getClassDetails()
+    {
+        $classes = SchoolClass::latest()->get();
+        return view('front-end.classes',compact('classes'));
+    }
 }
