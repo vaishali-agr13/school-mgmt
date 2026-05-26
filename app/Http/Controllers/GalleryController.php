@@ -17,7 +17,7 @@ class GalleryController extends Controller
     }
 
     public function indexFrontEnd() {
-        echo 'dsfds';die;
+        
         $galleries = Gallery::latest()->get();
 
         return view('front-end.gallery', compact('galleries'));
