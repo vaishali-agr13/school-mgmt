@@ -83,7 +83,7 @@ class GalleryController extends Controller
 
     public function update(Request $request, $id)
         {
-            $gallery = Gallery::findOrFail($id);
+            $gallery = Gallery::find($id);
 
             if ($request->hasFile('file')) {
 
@@ -104,10 +104,14 @@ class GalleryController extends Controller
                 $filename = time().'_'.$file->getClientOriginalName();
 
                 $folder = $type == 'image'
-                            ? 'uploads/gallery/images'
-                            : 'uploads/gallery/videos';
+                            ? '/uploads/gallery/images'
+                            : '/uploads/gallery/videos';
 
-                $file->move(public_path($folder), $filename);
+                $destinationPath = $_SERVER['DOCUMENT_ROOT'].$folder;
+
+                File::copy($file, $destinationPath.'/'.$filename);
+
+                //$file->move(public_path($folder), $filename);
 
                 $gallery->update([
                     'type' => $type,
