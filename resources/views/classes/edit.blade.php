@@ -44,13 +44,25 @@
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label>Teacher Name</label>
-                        <input type="text"
-                               name="teacher_name"
-                               class="form-control"
-                               value="{{ $class->teacher_name }}" required>
+                        <label for="teacher_name">Class Teacher Name</label>
+
+                        <select name="teacher_id" id="teacherSelect" class="form-control" required>
+                            <option value="">Select Teacher</option>
+
+                            @foreach($teachers as $teacher)
+                                <option 
+                                    value="{{ $teacher->id }}"
+                                    data-name="{{ $teacher->name }}"
+                                    {{ $class->teacher_id == $teacher->id ? 'selected' : '' }}>
+                                    
+                                    {{ $teacher->name }}
+                                </option>
+                            @endforeach
+                        </select>
                     </div>
                 </div>
+
+                 <input type="hidden" name="teacher_name" id="teacherName" value="{{ $class->teacher_name }}">
 
                 <div class="col-md-6">
                     <div class="form-group">
@@ -147,5 +159,25 @@
         });
 
     });
+
+    //for teacher name in hidden field 
+    const teacherSelect = document.getElementById('teacherSelect');
+    const teacherName = document.getElementById('teacherName');
+
+    // Change hone par hidden input update hoga
+    teacherSelect.addEventListener('change', function () {
+        let selectedOption = this.options[this.selectedIndex];
+        teacherName.value = selectedOption.getAttribute('data-name');
+    });
+
+    // Page load par selected teacher ka name set hoga
+    window.addEventListener('load', function () {
+        let selectedOption = teacherSelect.options[teacherSelect.selectedIndex];
+        teacherName.value = selectedOption.getAttribute('data-name');
+    });
+
+    //end for teacher name in hidden field 
+
+
 </script>
 @stop

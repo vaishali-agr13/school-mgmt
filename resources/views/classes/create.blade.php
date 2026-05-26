@@ -45,13 +45,28 @@
                        placeholder="Enter class name" required>
             </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="teacher_name">Class Teacher Name</label>
                 <input type="text"
                        name="teacher_name"
                        class="form-control"
                        placeholder="Enter teacher name" required>
+            </div> -->
+
+            <div class="form-group">
+                <label for="teacher_name">Class Teacher Name</label>
+                    <select name="teacher_id" id="teacherSelect"  class="form-control" required>
+                                <option value="">Select Teacher</option>
+
+                                @foreach($teachers as $teacher)
+                                    <option value="{{ $teacher->id }}" data-name="{{ $teacher->name }}">
+                                        {{ $teacher->name }}
+                                    </option>
+                                @endforeach
+                    </select>
             </div>
+
+            <input type="hidden" name="teacher_name" id="teacherName">
 
             <div class="form-group">
                 <label for="age">Age</label>
@@ -80,7 +95,7 @@
 
             <div class="form-group">
                 <label for="capacity">Capacity</label>
-                <input type="text"
+                <input type="number"
                        name="capacity"
                        class="form-control"
                        placeholder="Enter class capacity" required>
@@ -150,5 +165,12 @@
         });
 
     });
+
+        document.getElementById('teacherSelect').addEventListener('change', function () {
+            let selectedOption = this.options[this.selectedIndex];
+            document.getElementById('teacherName').value =
+                selectedOption.getAttribute('data-name');
+        });
+
 </script>
 @stop

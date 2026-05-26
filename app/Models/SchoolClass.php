@@ -9,6 +9,7 @@ class SchoolClass extends Model
     protected $fillable = [
         'class_logo',
         'class_name',
+        'teacher_id',
         'teacher_name',
         'fees',
         'age',

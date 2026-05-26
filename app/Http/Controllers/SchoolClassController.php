@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 use App\Models\SchoolClass;
+use App\Models\User;
+
 
 class SchoolClassController extends Controller
 {
@@ -19,7 +21,8 @@ class SchoolClassController extends Controller
     // Create form
     public function create()
     {
-        return view('classes.create');
+        $teachers = User::where('role', 'teacher')->get();
+        return view('classes.create',compact('teachers'));
     }
 
     // Store data
@@ -28,6 +31,7 @@ class SchoolClassController extends Controller
         $request->validate([
             'class_logo'=>'required',
             'class_name' => 'required',
+            'teacher_id' => 'required',
             'teacher_name' => 'required',
             'fees' => 'required',
             'age' => 'required',
@@ -61,6 +65,7 @@ class SchoolClassController extends Controller
         SchoolClass::create([
             'class_logo'=>$imageName,
             'class_name' => $request->class_name,
+            'teacher_id' => $request->teacher_id,
             'teacher_name' => $request->teacher_name,
             'fees' => $request->fees,
             'age' => $request->age,
@@ -75,8 +80,9 @@ class SchoolClassController extends Controller
     public function edit($id)
     {
         $class = SchoolClass::find($id);
+        $teachers = User::where('role', 'teacher')->get();
 
-        return view('classes.edit', compact('class'));
+        return view('classes.edit', compact('class','teachers'));
     }
 
     public function update(Request $request, $id)
@@ -112,6 +118,7 @@ class SchoolClassController extends Controller
         $class->update([
              'class_name'   => $request->class_name,
             'fees'         => $request->fees,
+            'teacher_id' => $request->teacher_id,
             'teacher_name' => $request->teacher_name,
             'age'          => $request->age,
             'time'         => $request->time,
