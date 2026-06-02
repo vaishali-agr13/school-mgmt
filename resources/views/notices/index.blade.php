@@ -87,7 +87,7 @@
 
                     <div class="form-group">
                         <label>Notice Date</label>
-                        <input type="date" name="date" class="form-control">
+                        <input type="date" name="date" class="form-control" required>
                     </div>
 
                 </div>
@@ -257,7 +257,10 @@
 
                     @if(count($notices) > 0)
 
-                        {{ $notices->last()->created_at->format('d M Y') }}
+                        {{  
+                        
+                        $notices->sortByDesc('created_at')->first()->created_at->format('d M Y');
+                        }}
 
                     @else
 

@@ -89,7 +89,7 @@
                             required
                         > -->
 
-                          <select name="month" class="form-control">
+                          <select name="month" class="form-control" required>
 
                                 <option value="">Select Month</option>
 

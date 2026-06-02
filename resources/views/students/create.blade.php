@@ -25,22 +25,22 @@
 
     <div class="mb-3">
         <label>Student Name</label>
-        <input type="text" name="name" class="form-control">
+        <input type="text" name="name" class="form-control" required>
     </div>
 
     <div class="mb-3">
         <label>Parent Name</label>
-        <input type="text" name="parent_name" class="form-control">
+        <input type="text" name="parent_name" class="form-control" required>
     </div>
 
     <div class="mb-3">
         <label>Parent Mobile</label>
-        <input type="text" name="parent_mobile" class="form-control">
+        <input type="text" name="parent_mobile" class="form-control" required>
     </div>
 
     <div class="mb-3">
         <label>Class</label>
-        <input type="text" name="class" class="form-control">
+        <input type="text" name="class" class="form-control" required>
     </div>
 
     <button class="btn btn-success">Save Student</button>

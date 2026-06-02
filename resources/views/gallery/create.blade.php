@@ -47,7 +47,7 @@
                     <input type="file"
                            name="files[]"
                            class="form-control"
-                           multiple>
+                           multiple required>
 
                     @error('files.*')
 
@@ -70,7 +70,7 @@
 
                 </button>
 
-                <a href="{{ url('/gallery/list') }}"
+                <a href="{{ url('/admin/gallery') }}"
                    class="btn btn-secondary">
 
                     Back

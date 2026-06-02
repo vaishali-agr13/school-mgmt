@@ -32,7 +32,7 @@
             name="name" 
             class="form-control"
             value="{{ $student->name }}"
-        >
+        required>
     </div>
 
     <div class="mb-3">
@@ -43,7 +43,7 @@
             name="parent_name" 
             class="form-control"
             value="{{ $student->parent_name }}"
-        >
+       required>
     </div>
 
     <div class="mb-3">
@@ -54,7 +54,7 @@
             name="parent_mobile" 
             class="form-control"
             value="{{ $student->parent_mobile }}"
-        >
+        required>
     </div>
 
     <div class="mb-3">
@@ -65,7 +65,7 @@
             name="class" 
             class="form-control"
             value="{{ $student->class }}"
-        >
+       required>
     </div>
 
     <button class="btn btn-primary">

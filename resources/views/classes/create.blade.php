@@ -122,7 +122,7 @@
                     <input type="file"
                         name="class_logo"
                         class="custom-file-input"
-                        id="logo">
+                        id="logo" required>
 
                     <label class="custom-file-label" for="logo">
                         Choose Image
