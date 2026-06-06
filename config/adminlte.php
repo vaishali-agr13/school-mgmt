@@ -326,6 +326,49 @@ return [
             'icon' => 'fas fa-tachometer-alt',
             'label_color' => 'success',
         ],
+
+        [
+            'text' => 'Students',
+            'url' => 'admin/students',
+            'icon' => 'fas fa-user-graduate',
+            'label_color' => 'success',
+        ],
+
+        [
+            'text' => 'Teachers',
+            'can'  => 'admin-only',
+            'icon' => 'fas fa-fw fa-briefcase',
+            'submenu' => [
+                        [
+                            'text' => 'Create Teacher',
+                            'url'  => '/admin/teacher/create',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                        [
+                            'text' => 'List Teacher',
+                            'url'  => '/admin/teachers',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                    ],
+        ],
+
+         [
+            'text' => 'Classes',
+            'can'  => 'admin-only',
+            'icon' => 'fas fa-fw fa-briefcase',
+            'submenu' => [
+                        [
+                            'text' => 'Create Class',
+                            'url'  => '/admin/classes/create',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                        [
+                            'text' => 'List Class',
+                            'url'  => '/admin/classes',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                    ],
+        ],
         [
             'text' => 'Attendance',
             'icon' => 'fas fa-calendar-check',
@@ -345,73 +388,33 @@ return [
             ]
         ],
 
-         [
-            'text' => 'Teachers',
-            'can'  => 'admin-only',
-            'icon' => 'fas fa-fw fa-briefcase',
-            'submenu' => [
-                        [
-                            'text' => 'Create Teacher',
-                            'url'  => '/admin/teacher/create',
-                            'icon' => 'fas fa-fw fa-plus-circle',
-                        ],
-                        [
-                            'text' => 'List Teacher',
-                            'url'  => '/admin/teachers',
-                            'icon' => 'fas fa-fw fa-plus-circle',
-                        ],
-                    ],
-        ],
-
         [
-            'text' => 'Classes',
-            'can'  => 'admin-only',
-            'icon' => 'fas fa-fw fa-briefcase',
-            'submenu' => [
-                        [
-                            'text' => 'Create Class',
-                            'url'  => '/admin/classes/create',
-                            'icon' => 'fas fa-fw fa-plus-circle',
-                        ],
-                        [
-                            'text' => 'List Class',
-                            'url'  => '/admin/classes',
-                            'icon' => 'fas fa-fw fa-plus-circle',
-                        ],
-                    ],
-        ],
-        [
-            'text' => 'Gallery',
-            'can'  => 'admin-only',
-            'url'=>'/admin/gallery',
-            'icon' => 'fas fa-fw fa-briefcase',
-        ],
-
-         [
-            'text' => ' Fees',
-            'url' => 'admin/fees',
-            'icon' => 'fas fa-money-bill-wave',
-            'label_color' => 'success',
-             'can'  => 'admin-only',
-        ],
-         [
             'text' => 'Homework',
             'url' => 'admin/homework',
             'icon' => 'fas fa-book',
             'label_color' => 'success',
         ],
 
-         [
+        [
+            'text' => ' Fees',
+            'url' => 'admin/fees',
+            'icon' => 'fas fa-money-bill-wave',
+            'label_color' => 'success',
+             'can'  => 'admin-only',
+        ],
+
+        [
             'text' => 'Notices',
             'url' => 'admin/notices',
             'icon' => 'fas fa-bullhorn',
             'label_color' => 'success',
         ],
-         [
-            'text' => 'Students',
-            'url' => 'admin/students',
-            'icon' => 'fas fa-user-graduate',
-            'label_color' => 'success',
+       
+        [
+            'text' => 'Gallery',
+            'can'  => 'admin-only',
+            'url'=>'/admin/gallery',
+            'icon' => 'fas fa-fw fa-briefcase',
         ],
     ],
 
